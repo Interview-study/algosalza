@@ -1,4 +1,3 @@
-// 미완성. 오류 있음.
 public class chomily {
     public int solution(String numbers) {
         Set<Integer> combinations = new HashSet<>();
@@ -28,7 +27,7 @@ public class chomily {
     }
 
     public boolean isPrime(int number) {
-        if (number % 2 == 0) {
+        if (number == 1 || number ==0 || number % 2 == 0) {
             return false;
         }
         for (int i = 3; i <= number / 2; i = i + 2) {
